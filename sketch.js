@@ -160,71 +160,73 @@ function restartShow() {
 function preload() {
   soundFormats('mp3', 'ogg');
   
-  // Page 4
-  soundFileA1 = loadSound('assets/auditory/clips/01_story.mp3');
-  soundFileA2 = loadSound('assets/auditory/clips/02_story.mp3');
-  soundFileA3 = loadSound('assets/auditory/clips/03_story.mp3');
-  soundFileA4 = loadSound('assets/auditory/clips/04_story.mp3');
+  //randomize the clip order
+  clipNums = [];
+  for (var i = 1; i < 49; i++) {
+    clipNums = concat(clipNums, i)
+  }
+  clipNums = shuffle(clipNums)
 
-  soundFileB1 = loadSound('assets/auditory/clips/05_story.mp3');
-  soundFileB2 = loadSound('assets/auditory/clips/06_story.mp3');
-  soundFileB3 = loadSound('assets/auditory/clips/07_story.mp3');
-  soundFileB4 = loadSound('assets/auditory/clips/08_story.mp3');
+  // Page 4
+  soundFileA1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[0],2), '_story.mp3'],''));
+  soundFileA2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[1],2), '_story.mp3'],''));
+  soundFileA3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[2],2), '_story.mp3'],''));
+  soundFileA4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[3],2), '_story.mp3'],''));
+
+  soundFileB1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[4],2), '_story.mp3'],''));
+  soundFileB2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[5],2), '_story.mp3'],''));
+  soundFileB3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[6],2), '_story.mp3'],''));
+  soundFileB4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[7],2), '_story.mp3'],''));
 
   // Page 5
-  soundFileC1 = loadSound('assets/auditory/clips/09_story.mp3');
-  soundFileC2 = loadSound('assets/auditory/clips/10_story.mp3');
-  soundFileC3 = loadSound('assets/auditory/clips/11_story.mp3');
-  soundFileC4 = loadSound('assets/auditory/clips/12_story.mp3');
-
-  soundFileD1 = loadSound('assets/auditory/clips/13_story.mp3');
-  soundFileD2 = loadSound('assets/auditory/clips/14_story.mp3');
-  soundFileD3 = loadSound('assets/auditory/clips/15_story.mp3');
-  soundFileD4 = loadSound('assets/auditory/clips/16_story.mp3');
+  soundFileC1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[8],2), '_story.mp3'],''));
+  soundFileC2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[9],2), '_story.mp3'],''));
+  soundFileC3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[10],2), '_story.mp3'],''));
+  soundFileC4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[11],2), '_story.mp3'],''));
+  soundFileD1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[12],2), '_story.mp3'],''));
+  soundFileD2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[13],2), '_story.mp3'],''));
+  soundFileD3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[14],2), '_story.mp3'],''));
+  soundFileD4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[15],2), '_story.mp3'],''));
 
   // Page 6
-  soundFileE1 = loadSound('assets/auditory/clips/17_story.mp3');
-  soundFileE2 = loadSound('assets/auditory/clips/18_story.mp3');
-  soundFileE3 = loadSound('assets/auditory/clips/19_story.mp3');
-  soundFileE4 = loadSound('assets/auditory/clips/20_story.mp3');
-
-  soundFileF1 = loadSound('assets/auditory/clips/21_story.mp3');
-  soundFileF2 = loadSound('assets/auditory/clips/22_story.mp3');
-  soundFileF3 = loadSound('assets/auditory/clips/23_story.mp3');
-  soundFileF4 = loadSound('assets/auditory/clips/24_story.mp3');
+  soundFileE1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[16],2), '_story.mp3'],''));
+  soundFileE2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[17],2), '_story.mp3'],''));
+  soundFileE3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[18],2), '_story.mp3'],''));
+  soundFileE4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[19],2), '_story.mp3'],''));
+  soundFileF1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[20],2), '_story.mp3'],''));
+  soundFileF2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[21],2), '_story.mp3'],''));
+  soundFileF3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[22],2), '_story.mp3'],''));
+  soundFileF4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[23],2), '_story.mp3'],''));
 
   // Page 7
-  soundFileG1 = loadSound('assets/auditory/clips/25_story.mp3');
-  soundFileG2 = loadSound('assets/auditory/clips/26_story.mp3');
-  soundFileG3 = loadSound('assets/auditory/clips/27_story.mp3');
-  soundFileG4 = loadSound('assets/auditory/clips/28_story.mp3');
-
-  soundFileH1 = loadSound('assets/auditory/clips/29_story.mp3');
-  soundFileH2 = loadSound('assets/auditory/clips/30_story.mp3');
-  soundFileH3 = loadSound('assets/auditory/clips/31_story.mp3');
-  soundFileH4 = loadSound('assets/auditory/clips/32_story.mp3');
+  soundFileG1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[24],2), '_story.mp3'],''));
+  soundFileG2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[25],2), '_story.mp3'],''));
+  soundFileG3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[26],2), '_story.mp3'],''));
+  soundFileG4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[27],2), '_story.mp3'],''));
+  soundFileH1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[28],2), '_story.mp3'],''));
+  soundFileH2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[29],2), '_story.mp3'],''));
+  soundFileH3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[30],2), '_story.mp3'],''));
+  soundFileH4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[31],2), '_story.mp3'],''));
 
   // Page 8
-  soundFileI1 = loadSound('assets/auditory/clips/33_story.mp3');
-  soundFileI2 = loadSound('assets/auditory/clips/34_story.mp3');
-  soundFileI3 = loadSound('assets/auditory/clips/35_story.mp3');
-  soundFileI4 = loadSound('assets/auditory/clips/36_story.mp3');
-
-  soundFileJ1 = loadSound('assets/auditory/clips/37_story.mp3');
-  soundFileJ2 = loadSound('assets/auditory/clips/38_story.mp3');
-  soundFileJ3 = loadSound('assets/auditory/clips/39_story.mp3');
-  soundFileJ4 = loadSound('assets/auditory/clips/40_story.mp3');
+  soundFileI1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[32],2), '_story.mp3'],''));
+  soundFileI2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[33],2), '_story.mp3'],''));
+  soundFileI3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[34],2), '_story.mp3'],''));
+  soundFileI4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[35],2), '_story.mp3'],''));
+  soundFileJ1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[36],2), '_story.mp3'],''));
+  soundFileJ2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[37],2), '_story.mp3'],''));
+  soundFileJ3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[38],2), '_story.mp3'],''));
+  soundFileJ4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[39],2), '_story.mp3'],''));
 
   // Page 9
-  soundFileK1 = loadSound('assets/auditory/clips/41_story.mp3');
-  soundFileK2 = loadSound('assets/auditory/clips/42_story.mp3');
-  soundFileK3 = loadSound('assets/auditory/clips/43_story.mp3');
-  soundFileK4 = loadSound('assets/auditory/clips/44_story.mp3');
-
-  soundFileL1 = loadSound('assets/auditory/clips/45_story.mp3');
-  soundFileL2 = loadSound('assets/auditory/clips/46_story.mp3');
-  soundFileL3 = loadSound('assets/auditory/clips/47_story.mp3');
-  soundFileL4 = loadSound('assets/auditory/clips/48_story.mp3');
+  soundFileK1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[40],2), '_story.mp3'],''));
+  soundFileK2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[41],2), '_story.mp3'],''));
+  soundFileK3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[42],2), '_story.mp3'],''));
+  soundFileK4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[43],2), '_story.mp3'],''));
+  soundFileL1 = loadSound(join(['assets/auditory/clips/', nf(clipNums[44],2), '_story.mp3'],''));
+  soundFileL2 = loadSound(join(['assets/auditory/clips/', nf(clipNums[45],2), '_story.mp3'],''));
+  soundFileL3 = loadSound(join(['assets/auditory/clips/', nf(clipNums[46],2), '_story.mp3'],''));
+  soundFileL4 = loadSound(join(['assets/auditory/clips/', nf(clipNums[47],2), '_story.mp3'],''));
 
   soundFileWind = loadSound('assets/auditory/wind only_ST2.mp3')
   soundFileVoices = loadSound('assets/auditory/all voices_ST2.mp3')
