@@ -161,73 +161,73 @@ function preload() {
   soundFormats('mp3', 'ogg');
   
   // Page 4
-  soundFileA1 = loadSound('assets/auditory/voices/11.mp3');
-  soundFileA2 = loadSound('assets/auditory/voices/04.mp3');
-  soundFileA3 = loadSound('assets/auditory/voices/03.mp3');
-  soundFileA4 = loadSound('assets/auditory/voices/07.mp3');
+  soundFileA1 = loadSound('assets/auditory/clips/01_story.mp3');
+  soundFileA2 = loadSound('assets/auditory/clips/02_story.mp3');
+  soundFileA3 = loadSound('assets/auditory/clips/03_story.mp3');
+  soundFileA4 = loadSound('assets/auditory/clips/04_story.mp3');
 
-  soundFileB1 = loadSound('assets/auditory/viola/VIola_1.mp3');
-  soundFileB2 = loadSound('assets/auditory/viola/VIola_2.mp3');
-  soundFileB3 = loadSound('assets/auditory/viola/VIola_3.mp3');
-  soundFileB4 = loadSound('assets/auditory/viola/VIola_4.mp3');
+  soundFileB1 = loadSound('assets/auditory/clips/05_story.mp3');
+  soundFileB2 = loadSound('assets/auditory/clips/06_story.mp3');
+  soundFileB3 = loadSound('assets/auditory/clips/07_story.mp3');
+  soundFileB4 = loadSound('assets/auditory/clips/08_story.mp3');
 
   // Page 5
-  soundFileC1 = loadSound('assets/auditory/voices/23.mp3');
-  soundFileC2 = loadSound('assets/auditory/voices/09.mp3');
-  soundFileC3 = loadSound('assets/auditory/voices/02.mp3');
-  soundFileC4 = loadSound('assets/auditory/voices/01.mp3');
+  soundFileC1 = loadSound('assets/auditory/clips/09_story.mp3');
+  soundFileC2 = loadSound('assets/auditory/clips/10_story.mp3');
+  soundFileC3 = loadSound('assets/auditory/clips/11_story.mp3');
+  soundFileC4 = loadSound('assets/auditory/clips/12_story.mp3');
 
-  soundFileD1 = loadSound('assets/auditory/viola/VIola_5.mp3');
-  soundFileD2 = loadSound('assets/auditory/viola/VIola_6.mp3');
-  soundFileD3 = loadSound('assets/auditory/viola/VIola_7.mp3');
-  soundFileD4 = loadSound('assets/auditory/viola/VIola_8.mp3');
+  soundFileD1 = loadSound('assets/auditory/clips/13_story.mp3');
+  soundFileD2 = loadSound('assets/auditory/clips/14_story.mp3');
+  soundFileD3 = loadSound('assets/auditory/clips/15_story.mp3');
+  soundFileD4 = loadSound('assets/auditory/clips/16_story.mp3');
 
   // Page 6
-  soundFileE1 = loadSound('assets/auditory/voices/23.mp3');
-  soundFileE2 = loadSound('assets/auditory/voices/16.mp3');
-  soundFileE3 = loadSound('assets/auditory/voices/08.mp3');
-  soundFileE4 = loadSound('assets/auditory/voices/12.mp3');
+  soundFileE1 = loadSound('assets/auditory/clips/17_story.mp3');
+  soundFileE2 = loadSound('assets/auditory/clips/18_story.mp3');
+  soundFileE3 = loadSound('assets/auditory/clips/19_story.mp3');
+  soundFileE4 = loadSound('assets/auditory/clips/20_story.mp3');
 
-  soundFileF1 = loadSound('assets/auditory/viola/VIola_9.mp3');
-  soundFileF2 = loadSound('assets/auditory/viola/VIola_10.mp3');
-  soundFileF3 = loadSound('assets/auditory/viola/VIola_11.mp3');
-  soundFileF4 = loadSound('assets/auditory/viola/VIola_12.mp3');
+  soundFileF1 = loadSound('assets/auditory/clips/21_story.mp3');
+  soundFileF2 = loadSound('assets/auditory/clips/22_story.mp3');
+  soundFileF3 = loadSound('assets/auditory/clips/23_story.mp3');
+  soundFileF4 = loadSound('assets/auditory/clips/24_story.mp3');
 
   // Page 7
-  soundFileG1 = loadSound('assets/auditory/voices/05.mp3');
-  soundFileG2 = loadSound('assets/auditory/voices/14.mp3');
-  soundFileG3 = loadSound('assets/auditory/voices/10.mp3');
-  soundFileG4 = loadSound('assets/auditory/voices/22.mp3');
+  soundFileG1 = loadSound('assets/auditory/clips/25_story.mp3');
+  soundFileG2 = loadSound('assets/auditory/clips/26_story.mp3');
+  soundFileG3 = loadSound('assets/auditory/clips/27_story.mp3');
+  soundFileG4 = loadSound('assets/auditory/clips/28_story.mp3');
 
-  soundFileH1 = loadSound('assets/auditory/viola/VIola_13.mp3');
-  soundFileH2 = loadSound('assets/auditory/viola/VIola_14.mp3');
-  soundFileH3 = loadSound('assets/auditory/viola/VIola_15.mp3');
-  soundFileH4 = loadSound('assets/auditory/viola/VIola_16.mp3');
+  soundFileH1 = loadSound('assets/auditory/clips/29_story.mp3');
+  soundFileH2 = loadSound('assets/auditory/clips/30_story.mp3');
+  soundFileH3 = loadSound('assets/auditory/clips/31_story.mp3');
+  soundFileH4 = loadSound('assets/auditory/clips/32_story.mp3');
 
   // Page 8
-  soundFileI1 = loadSound('assets/auditory/voices/06.mp3');
-  soundFileI2 = loadSound('assets/auditory/voices/17.mp3');
-  soundFileI3 = loadSound('assets/auditory/voices/20.mp3');
-  soundFileI4 = loadSound('assets/auditory/voices/21.mp3');
+  soundFileI1 = loadSound('assets/auditory/clips/33_story.mp3');
+  soundFileI2 = loadSound('assets/auditory/clips/34_story.mp3');
+  soundFileI3 = loadSound('assets/auditory/clips/35_story.mp3');
+  soundFileI4 = loadSound('assets/auditory/clips/36_story.mp3');
 
-  soundFileJ1 = loadSound('assets/auditory/viola/VIola_17.mp3');
-  soundFileJ2 = loadSound('assets/auditory/viola/VIola_18.mp3');
-  soundFileJ3 = loadSound('assets/auditory/viola/VIola_19.mp3');
-  soundFileJ4 = loadSound('assets/auditory/viola/VIola_20.mp3');
+  soundFileJ1 = loadSound('assets/auditory/clips/37_story.mp3');
+  soundFileJ2 = loadSound('assets/auditory/clips/38_story.mp3');
+  soundFileJ3 = loadSound('assets/auditory/clips/39_story.mp3');
+  soundFileJ4 = loadSound('assets/auditory/clips/40_story.mp3');
 
   // Page 9
-  soundFileK1 = loadSound('assets/auditory/voices/15.mp3');
-  soundFileK2 = loadSound('assets/auditory/voices/18.mp3');
-  soundFileK3 = loadSound('assets/auditory/voices/24.mp3');
-  soundFileK4 = loadSound('assets/auditory/voices/19.mp3');
+  soundFileK1 = loadSound('assets/auditory/clips/41_story.mp3');
+  soundFileK2 = loadSound('assets/auditory/clips/42_story.mp3');
+  soundFileK3 = loadSound('assets/auditory/clips/43_story.mp3');
+  soundFileK4 = loadSound('assets/auditory/clips/44_story.mp3');
 
-  soundFileL1 = loadSound('assets/auditory/viola/VIola_21.mp3');
-  soundFileL2 = loadSound('assets/auditory/viola/VIola_22.mp3');
-  soundFileL3 = loadSound('assets/auditory/viola/VIola_23.mp3');
-  soundFileL4 = loadSound('assets/auditory/viola/VIola_24.mp3');
+  soundFileL1 = loadSound('assets/auditory/clips/45_story.mp3');
+  soundFileL2 = loadSound('assets/auditory/clips/46_story.mp3');
+  soundFileL3 = loadSound('assets/auditory/clips/47_story.mp3');
+  soundFileL4 = loadSound('assets/auditory/clips/48_story.mp3');
 
-  soundFileWind = loadSound('assets/auditory/wind_only.mp3')
-  soundFileVoices = loadSound('assets/auditory/all voices_only.mp3')
+  soundFileWind = loadSound('assets/auditory/wind only_ST2.mp3')
+  soundFileVoices = loadSound('assets/auditory/all voices_ST2.mp3')
   
   bg_title = loadImage('assets/visual/Page_01.jpg')
   bg_cam = loadImage('assets/visual/Page_02.jpg')
