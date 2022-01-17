@@ -712,7 +712,7 @@ function scene1() {
   if (!wind_on) {
     soundFileWind.loop()
     soundFileWind.pan(0);
-    soundFileWindGain.amp(.5);
+    soundFileWindGain.amp(.9);
     soundFileWind.fade(1,1)
     wind_on = true;
   }
